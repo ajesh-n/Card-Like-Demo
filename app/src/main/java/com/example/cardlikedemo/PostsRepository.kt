@@ -20,10 +20,9 @@ class PostsRepository(private val context: Context) {
             }.map { favoriteCardIds ->
                 POSTS.map {
                     if (favoriteCardIds.contains(it.id)) {
-                        it.copy(isLiked = true)
-                    } else {
-                        it
+                        it.isLiked = true
                     }
+                    it
                 }
             }
     }

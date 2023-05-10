@@ -5,5 +5,5 @@ data class Post(
     val title: String,
     val content: String,
     val imageUrl: String,
-    val isLiked: Boolean = false
+    var isLiked: Boolean = false
 )
